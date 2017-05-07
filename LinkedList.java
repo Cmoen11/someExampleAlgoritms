@@ -14,7 +14,6 @@ public class LinkedList <E>{
         Node<E> node = new Node<>(data);
         if (firstElement == null) {
             this.firstElement = node;
-            this.firstElement.nextElement = node;
             this.lastElement = node;
         }else {
             this.lastElement.nextElement = node;
